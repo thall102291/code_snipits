@@ -10,8 +10,8 @@ import java.util.Random;
  * DESC Divides a 2D space into smaller spaces for more efficient parsing of rectangles inside of space.
  */
 public class QuadTree {
-    private final int MAX_OBJECTS = 20;
-    private final int MAX_LEVELS = 4;
+    private final int MAX_OBJECTS = 20; //max amount of rectangles per leaf
+    private final int MAX_LEVELS = 4; //max levels of splitting
 
     private int level;
     private LinkedList<Rectangle> objects;
